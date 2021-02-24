@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        ul strong {
+            color: blue;    /*자손셀렉터*/
+        }
+
+        div > strong {
+            background-color: yellow;   /*자식셀렉터*/
+        }
+        div em{
+            color: red;
+        }
+        .e11 .e22{
+            color: red;
+        }
+        div div{
+            color: green;
+        }
+        body > div > ul li > strong{
+            color: aqua;
+        }
+        li:hover {
+            background-color: orange;
+        }
+        h2::first-letter{
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="bo">
+    <div class="e11">
+        <h2>하이</h2>
+        <div>2월 <strong>학습내용</strong></div>
+        <ul>
+            <li><strong>HTML5</strong></li>
+            <li><em class="e22">CSS</em></li>
+            <li>Javascript</li>
+        </ul>
+        <div>과락은 F! </div>
+    </div>
+</body>
+
+</html>
