@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        input[type=text]{
+            color: red;
+        }
+        input[type=text]:hover, textarea:hover{
+            background-color: aliceblue;
+        }
+        span{
+            width: 70px;
+            padding : 10px;
+            display: inline-block;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>Name</span> : <input type="text" placeholder="이름을 입력하세요">
+    </div>
+    <div>
+        <span>E-mail</span> : <input type="email" placeholder="이메일을 입력하세요">
+    </div>
+    <div>
+        <span>comment</span> : <textarea cols="20" rows="2" placeholder="메시지"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="제출">
+    </div>
+</body>
+
+</html>
