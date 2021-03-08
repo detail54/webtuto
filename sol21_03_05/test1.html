@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 2px;
+            font-weight: bold;
+            font-size: 4em;
+            color: #005d9b;
+        }
+
+        .button li {
+            display: inline;
+            margin: 25px 8px;
+            font-size: 30px;
+        }
+
+        .button {
+            margin: 25px 8px;
+        }
+
+        .button li input[type=button] {
+            width: 300px;
+            height: 80px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .left, .right {
+            margin-top: 30px;
+            width: 500px;
+            margin: 50px;
+            display: inline-block;
+        }
+
+        .ah {
+            color: black;
+            text-decoration: none;
+        }
+        .ah:hover{
+            color:purple;
+            text-decoration: underline;
+        }
+
+        .left p, .right p {
+            border-bottom: 1px solid rgb(190, 190, 190);
+            margin-bottom: 0;
+        }
+
+        .left ul li, .right ul li {
+            list-style: none;
+            width: 500px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 4px 0px;
+            font-size: 15px;
+            border-bottom: 1px dashed rgb(190, 190, 190);;
+        }
+        .left ul, .right ul {
+            padding-left: 0;
+            margin-top: 9px;
+            text-align: left;
+        }
+
+        .plus {
+            color: #005d9b;
+            font-size: 37px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 400px;
+        }
+
+        .gong {
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        .left ul li div, .right ul li div{
+            display: inline-block;
+            width: 500px;
+            border-bottom: 1px dotted rgb(190, 190, 190);
+        }
+        footer{
+            background-color: #2f2f2f;
+            color: white;
+        }
+        footer div .lin{
+            width: 80%;
+            position: relative;
+            left: 10%;
+            right: 10%;
+            border-bottom: 1px dotted gray;
+        }
+        footer div .lin2{
+            width: 80%;
+            position: relative;
+            left: 10%;
+            right: 10%;
+            color: gray;
+        }
+        footer div .lin li{
+            display: inline-block;
+        }
+        .lin li{
+            padding: 20px 0px;
+            margin-right: 10px;
+        }
+        .lin li a{
+            color: white;
+            text-decoration: none;
+        }
+        .lin{
+            text-align: left;
+            padding-left: 0;
+        }
+        .lin2{
+            text-align: left;
+            padding-left: 0;
+            font-size: 14px;
+        }
+        .lin2 li{
+            padding: 6px 0px;
+            list-style: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>[ SOLDESK; ]</h1>
+    </header>
+    <hr>
+    <section>
+        <ul class="button">
+            <li><input type="button" value="설문조사"></li>
+            <li><input type="button" value="NCS평가"></li>
+            <li><input type="button" value="시험응시"></li>
+        </ul>
+        <ul class="button">
+            <li><input type="button" value="회원가입"></li>
+            <li><input type="button" value="로그인"></li>
+            <li><input type="button" value="회원가입아이디/비번찾기"></li>
+        </ul>
+
+        <div class="left">
+            <p><span class="gong">공지사항</span><span class="plus">+</span></p>
+            <ul>
+                <li><a href="" class="ah">사전설명회(OT) 훈련생자료_2021-03-03 ~ 2021-08-19 [K-디지털] Ansible 자동화로 구현한 클라우드 환경
+                        DevOps 3회차</a></li>
+                <li><a href="" class="ah">사전설명회(OT) 훈련생자료_2021-02-26 ~ 2021-07-30 (클라우드 운영 관리)가상화 기반 오픈 네트워크 시스템 엔지니어 과정B</a></li>
+                <li><a href="" class="ah">사전설명회(OT) 훈련생자료_2021-02-26 ~ 2021-07-30 (빅데이터 UI 전문가)자바 파이썬 기반 빅데이터 UI 구축 전문가 양성과정 A</a></li>
+                <li><a href="" class="ah">코로나19 사회적 거리두기에 동참하는 솔데크인이 됩시다 (2차 추가내용)</a></li>
+                <li><a href="" class="ah">코로나19 사회적 거리두기에 동참하는 솔데크인이 됩시다</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <p><span class="gong">건의사항</span><span class="plus">+</span></p>
+            <ul>
+                <li><a href="" class="ah">비밀글 입니다.</a></li>
+                <li><a href="" class="ah">비밀글 입니다.</a></li>
+                <li><a href="" class="ah">비밀글 입니다.</a></li>
+                <li><a href="" class="ah">비밀글 입니다.</a></li>
+                <li><a href="" class="ah">비밀글 입니다.</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <ul class="lin">
+                <li><a href="">개인정보보호정책</a></li>
+                <li><a href="">메일주소무단수집거부</a></li>
+            </ul>
+            <ul class="lin2">
+                <li>회사명 : 솔데스크 대표자 : 강재민 Tel : 02)6901-7000 Fax : 02)725-7711 개인정보보호책임자 : 장병국 sol_3256@naver.com Tel : 02)6901-7011 사업자번호 : 101-86-50485</li>
+                <li>통신판매업신고번호 : 제2009-서울종로-1141호</li>
+                <li>031-90 서울특별시 종로구 종로12길 15 5층(관철동 13-13)</li>
+                <li style="padding-bottom: 20px;">copyright © 솔데스크. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
