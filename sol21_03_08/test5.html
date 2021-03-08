@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var t = new Date();
+
+        document.write(t.toUTCString() + "<br>");
+
+        document.write(t.getFullYear() + "<br>");
+        document.write(t.getMonth() + 1 + "<br>");
+        document.write(t.getDate() + "<br>");
+        document.write(t.getHours() + "<br>");
+        document.write(t.getMinutes() + "<br>");
+
+        var n = new Date(2021, 2, 8, 15, 36, 15);
+
+        document.write(n.toLocaleString()+"<br>");
+
+        var d = new Date();
+        if(d.getMinutes() % 2 == 0){
+            document.body.style.backgroundColor = "yellow";
+        } else {
+            document.body.style.backgroundColor = "blue";
+        }
+        document.write(d.getMinutes()+"분이다");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function dan(a) {
+            while (true) {
+                if (isNaN(a)) {
+                    a = prompt("숫자만 입력");
+                    continue;
+                } else {
+                    for (var i = 1; i < 10; i++) {
+                        document.write(a + " * " + i + " = " + a * i + "<br>");
+                    }
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var n = prompt("원하는 단?");
+        dan(n);
+    </script>
+</body>
+
+</html>
