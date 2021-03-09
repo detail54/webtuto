@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function show(a) {
+            document.write(a + "<br>");
+        }
+
+        var ary = new Array("형록", "재경", "용현");
+        var ary1 = new Array("인영");
+        var n;
+
+        n = ary.concat(ary1);
+        show(n);
+
+        n = ary.join("@@");
+        show(n);
+
+        n = ary.slice(1,3);
+        show(n);
+
+        n = ary.sort();
+        show(n);
+
+        n = ary.reverse();
+        show(n);
+
+        n = ary.toString();
+        show(n);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
