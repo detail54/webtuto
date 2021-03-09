@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function q1() {
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < i + 1; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+
+        function q2() {
+            var a = prompt("문자입력");
+            while (true) {
+                if (a == "password") {
+                    break;
+                } else {
+                    document.write(a + "<br>");
+                    a = prompt("문자입력");
+                }
+            }
+        }
+
+        function q3() {
+            var a = prompt("수식입력");
+            a = eval(a);
+            document.write(a);
+        }
+
+        function q4() {
+            var a = prompt("정수 입력");
+            var sum = 0;
+            for (var i = 0; i <= a; i++) {
+                sum += i;        
+            }
+            document.write(sum);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        
+    </script>
+</body>
+
+</html>

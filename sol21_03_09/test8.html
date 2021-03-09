@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        var name;
+        var score;
+        
+        function student(a, b) {
+            name = a;
+            score = b;
+
+            if (score >= 90) {
+                document.write(name +" : A<br>");
+                } else if (score >= 80) {
+                    document.write(name +" : B<br>");
+                } else {
+                    document.write(name +" : C<br>");
+                }
+
+            
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var a = new student("juli", 60);
+        var b = new student("tom", 100);
+
+        //document.write(a.name + "학점" + a.getgrade());
+        //document.write(b.name + "학점" + b.getgrade());
+    </script>
+</body>
+
+</html>

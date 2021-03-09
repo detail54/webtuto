@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var n = document.getElementById("one");
+
+        var str = n.innerHTML + "\n";
+        str += n.style.color + "\n";
+        str += n.childElementCount + "\n";
+
+        alert(str);
+
+
+    </script>
+</head>
+<body>
+    
+    <p id="one" style="color:red; background-color: chartreuse;" onclick="this.style.color='blue'">
+        이것은 <span style="color:chocolate">자바 스크립트</span>
+    </p>
+
+    <script>
+        var n = document.getElementById("one");
+
+        var str = n.innerHTML + "\n";
+        str += n.style.color + "\n";
+        str += n.childElementCount + "\n";
+
+        alert(str);
+
+    </script>
+</body>
+</html>

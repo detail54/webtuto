@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+//1. 오브젝트 생성해서 접근
+        var music = new Object();
+        
+        music.title = 1;
+        music.singer = 1;
+        music.price = 1;
+
+//2. 리터럴
+        var music = {
+            title:1,
+            singer:2,
+            price:3
+        };
+
+//3. 프로토타입
+        function z(){
+            this.title = 2;
+            this.singer = 2;
+            this.price = 3;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var music = new z();
+
+        document.write(music.title+"<br>");
+        document.write(music.singer+"<br>");
+        document.write(music.price+"<br>");
+    </script>
+</body>
+</html>

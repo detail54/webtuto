@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        //프로토타입
+        function mon(name, id, n) {
+            this.name = name;
+            this.id = id;
+            this.n = n;
+
+            this.a = function () {
+                return this.n;
+            }
+            this.plus = function (money) {
+                this.n += money;
+            }
+
+            this.minus = function (money) {
+                this.n -= money;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var aa = new mon("a", "123", 10000);
+
+        document.write(aa.name);
+
+        aa.plus(1000);
+        document.write(aa.a() + "<br>");
+
+        aa.minus(5000);
+        document.write(aa.a() + "<br>");
+
+        document.write(aa.id);
+        document.write(aa.n);
+    </script>
+</body>
+
+</html>
