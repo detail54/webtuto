@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var n = "hidden";
+        function ch() {
+            var v = document.querySelector("#aaa");
+            var v2 = document.querySelector(".bbb");
+
+            if(n == "hidden"){
+                n = "visible";
+            } else {
+                n = "hidden";
+            }
+            v.style.visibility = n;
+            v2.style.visibility = n;
+
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="ch()">button</button>
+    <hr>
+    <ul>
+        <li>I (<span id="aaa">love</span>) you</li>
+        <li>마스크착용 (<span class="bbb">의무화</span>)</li>
+    </ul>
+</body>
+
+</html>
