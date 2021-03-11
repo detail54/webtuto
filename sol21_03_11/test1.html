@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function tt() {
+            var a = document.getElementById("ta");
+            var inner = "<table border = '1'>";
+            var aa = [n, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, n2, 0, 1, 4, 9, 16, 25, 36, 49, 64, 81];
+
+            for (var i = 0; i < aa.length; i++) {
+                if (i == 0 || i == 11) {
+                    inner += "'<tr><th>'" + i + "'</th>'";
+                } else if (i == 10) {
+                    inner += "'<td>'" + i + "'</td></tr>'";
+                } else if (i == aa.length - 1) {
+                    inner += "'<td>'" + i + "'</td></tr></table>'";
+                }
+            }
+            document.write(inner);
+        }
+    </script>
+</head>
+
+<body id="ta">
+    <script>
+        tt();
+    </script>
+
+</body>
+
+</html>
