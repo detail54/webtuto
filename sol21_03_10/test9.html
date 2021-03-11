@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        var n
+
+        function ch(){
+            n = document.getElementById("a");
+
+            n.onmouseover = over;
+            n.onmouseout = out;
+        }
+        function over(){
+            n.style.backgroundColor = "red";
+        }
+        function out(){
+            n.style.backgroundColor = "black";
+        }
+    </script>
+</head>
+<body onload="ch()">
+
+    <p id="a">마우스를 올리면</p>
+</body>
+</html>

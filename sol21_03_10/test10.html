@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var n;
+
+        function ch() {
+            n = document.getElementById("a");
+
+            function over() {
+                n.style.backgroundColor = "red";
+            }
+
+            function out() {
+                n.style.backgroundColor = "black";
+            }
+
+            n.addEventListener("mouseover", over);
+            n.addEventListener("mouseout", out);
+        }
+    </script>
+</head>
+
+<body onload="ch()">
+
+    <p id="a">마우스를 올리면</p>
+
+</body>
+
+</html>

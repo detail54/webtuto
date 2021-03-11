@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function divide() {
+            var obj = document.getElementById("parent");
+            var n = document.createElement("div");
+
+            n.innerHTML = "new div";
+            n.setAttribute("id", "new");
+
+            n.style.backgroundColor = "red";
+            n.style.color = "white";
+
+            n.addEventListener("click", function(){
+                var p = this.parentElement;
+                p.removeChild(this);
+            });
+            obj.appendChild(n);
+        }
+    </script>
+</head>
+
+<body id="parent">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet velit sequi at distinctio molestiae ea,
+
+        <a href="javascript:divide()">생성노드</a>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        function result(r) {
+            var pa = r.parentElement.innerText;
+            var index = pa.indexOf("=");
+
+            r.innerText = eval(pa.slice(0,index-1));
+        }
+    </script>
+</head>
+
+<body>
+    <h2>계산해봅시다</h2>
+    <hr>
+    <ul>
+        <li>3 + 4 = <label onclick="result(this)">답</label></li>
+        <li>5 * 20 + 60 = <label onclick="result(this)">답</label></li>
+        <li>20 / 5 - 4 * 5 = <label onclick="result(this)">답</label></li>
+    </ul>
+</body>
+
+</html>

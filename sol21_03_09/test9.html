@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script>
         var mart = new Array();
-        
-        
-        
+
+        for (var i = 0; i < 2; i++) {
+            var input = prompt("제품/가격 입력");
+            var index = input.indexOf("/");
+            mart[0] = input.slice(0, index);
+            mart[1] = input.slice(index, input.length - 1);
+
+            this.title = mart[0];
+            this.price = mart[1];
+
+            var big = 0;
+            var name = 0;
+
+            function thing() {
+
+                this.big = function () {
+                    if (mart[1] > big) {
+                        name = mart[0];
+                        big = mart[1];
+                    }
+                }
+                return big;
+            }
+        }
     </script>
 </head>
+
 <body>
     <script>
         for (var i = 0; i < mart.length; i++) {
