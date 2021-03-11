@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function cc(){
+            var v = document.getElementById("vv");
+            var n = document.createElement("div");
+
+            n.innerHTML = "서버";
+            n.addEventListener("click",function(){
+                var p = this.parentElement;
+                p.removeChild(this)
+            });
+            v.appendChild(n);
+        }
+
+    </script>
+</head>
+<body>
+    <p id="vv">Q.컴퓨터 분야 뭐가 관심있니?</p>
+    <input type="button" value="답 보기" onclick="cc()">
+
+    <p id="vs">Q.뭐 먹고싶니?</p>
+    <input type="button" value="답 보기" onclick="ca()">
+
+    
+</body>
+</html>

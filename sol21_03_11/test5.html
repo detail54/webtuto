@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function down(a){
+            a.style.backgroundColor = "red";
+        }
+        function over(a){
+            a.style.backgroundColor = "black";
+        }
+        function out(a){
+            a.style.backgroundColor = "orange";
+        }
+        function wheel(e, a){
+            if(e.wheelDelta < 0){
+                a.style.backgroundColor = "blue";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    배경색 변경
+    <span id="aa" onmousedown="down(this)" 
+    onmouseover="over(this)" 
+    onmouseout="out(this)"
+    onwheel="wheel(event,this)">자바스크립트</span>
+</body>
+</html>
