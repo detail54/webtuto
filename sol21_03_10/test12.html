@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <script>
+
+        var ran = parseInt(Math.random()*256);
+        function ch(){
+            var n = document.getElementById("a");
+
+            function out(){
+                n.style.backgroundColor = "white";
+            }
+
+            n.addEventListener("mouseover",function(){
+                while(true){
+                    n.style.transition
+                    n.style.backgroundColor = "rgb(" + parseInt(Math.random()*256) + "," + parseInt(Math.random()*256) + "," + parseInt(Math.random()*256) + ")";
+                }
+            });
+            
+
+        }
+    </script>
+</head>
+
+<body onload="ch()">
+
+    <p id="a">마우스를 올리면</p>
+</body>
+
+</html>
