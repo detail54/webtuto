@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p>안녕<span>하세요</span></p>
+    <form>
+        <input type="text" name="a">
+        <input type="button" value="확인" id="bu">
+    </form>
+
+    <div id="di"></div>
+
+    <script>
+        var n = document.getElementById("di");
+        var b = document.getElementById("bu");
+
+        document.body.addEventListener("click", cap, true);
+
+        b.addEventListener("click", bub, false);
+
+        var bb = document.getElementById("body");
+
+        bb.addEventListener("click", bub, false);
+
+        function cap(e){
+            var obj = e.currentTarget;
+            var m = obj.tagName;
+            n.innerHTML += m + e.type;
+        }
+
+        function bub(e){
+            var obj = e.currentTarget;
+            var m = obj.tagName;
+            n.innerHTML += m + e.type;
+        }
+    </script>
+</body>
+</html>

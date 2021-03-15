@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function f(e){
+            var t = e.type + "<br>"
+            + e.target + "<br>"
+            + e.currentTarget + "<br>"
+            + e.defaultPrevented;
+
+            var n = document.getElementById("aa");
+            
+            n.append(t);
+        }
+    </script>
+</head>
+<body>
+    <p id="aa">마우스</p>
+    <button onclick="f(event)">클릭!!</button>
+    
+</body>
+</html>

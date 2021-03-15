@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function cal(){
+            var a = document.getElementById("a");
+            var b = document.getElementById("b");
+            b.value = eval(a.value);
+        }
+    </script>
+</head>
+<body>
+    식 <input type="text" id="a"><br>
+    결과 <input type="text" id = "b">
+    <button onclick="cal()">결과</button>
+
+</body>
+</html>

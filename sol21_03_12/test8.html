@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function on(){
+            var n = document.getElementById("aa");
+            var m = document.getElementById("bb");
+            var b = n.selectedIndex;
+
+            m.src = n.option[b].value;
+
+
+        }
+    </script>
+</head>
+<body onload="on()">
+    <select id="aa">
+        <option value="C:\Users\82109\OneDrive\바탕 화면\re.jpg">레몬1</option>
+        <option value="C:\Users\82109\OneDrive\바탕 화면\re.jpg">레몬2</option>
+    </select>
+
+    <span id="span">배고파!!</span>
+    <p><img id = "bb" src="C:\Users\82109\OneDrive\바탕 화면\re.jpg"></p>
+
+</body>
+</html>

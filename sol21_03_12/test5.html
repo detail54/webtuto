@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+
+        function bl(obj) {
+            if (obj.value == "") {
+                alert("이름 입력해야돼!!");
+                obj.focus();
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="document.getElementById('a').focus();">
+    <form>
+        이름 : <input type="text" id="a" onblur="bl(this)"><br>
+        번호 : <input type="text" id="b">
+    </form>
+</body>
+
+</html>
