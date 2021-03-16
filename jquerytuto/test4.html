@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("tr:odd").css("background","yellow");
+            $("tr:even").css("background","pink");
+            $("tr:first").css("background","blue");
+        });
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr><th>이름</th><th>지역</th></tr>
+        <tr><td>용현</td><td>서울</td></tr>
+        <tr><td>형록</td><td>경기</td></tr>
+        <tr><td>준엽</td><td>서울</td></tr>
+        <tr><td>종호</td><td>경기</td></tr>
+    </table>
+</body>
+
+</html>

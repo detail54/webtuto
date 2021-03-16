@@ -16,30 +16,9 @@
         }
     </style>
     <script>
-        var result = document.createElement("div");
-
-        function ev(obj) {
-            obj.addEventListener("click", function ev() {
-                obj.innerText = parseInt((Math.random() * 3) + 1);
-                check();
-            });
-        }
-
-        function check() {
-            var a = document.getElementById("num").innerText;
-
-            if (a[0] == a[1] && a[0] == a[2]) {
-                result.innerText = "성공";
-                document.body.removeChild(result);
-                document.body.appendChild(result);
-            } else {
-                result.innerText = "실패";
-                document.body.appendChild(result);
-            }
-        }
-
         window.onload = function () {
             var a = document.getElementById("num");
+            var result = document.createElement("div");
             var number = [document.createElement("span"), document.createElement("span"),
                 document.createElement("span")
             ];
@@ -47,7 +26,19 @@
             for (var i = 0; i < number.length; i++) {
                 number[i].innerText = 1;
                 a.appendChild(number[i]);
-                ev(number[i]);
+                
+                number[i].appendChild("click", function () {
+                    number[i].innerText = parseInt((Math.random() * 3) + 1);
+
+                    if (number[0].innerText == number[1].innerText && number[0].innerText == number[2].innerText) {
+                        result.innerText = "성공";
+                        document.body.removeChild(result);
+                        document.body.appendChild(result);
+                    } else {
+                        result.innerText = "실패";
+                        document.body.appendChild(result);
+                    }
+                });
             }
         }
     </script>

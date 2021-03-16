@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("p,h1").css("color", "white")
+                .css("font-size", "2em")
+                .css("border", "4px solid gray")
+                .css("display", "inline-block")
+                .css("background-color", "black")
+                .css("text-shadow", "50px 50px red");
+        });
+
+        $(document).ready(function () {
+            $("body > * ").css("color", "green");
+        });
+    </script>
+
+</head>
+
+<body>
+    <p>안녕하세요</p>
+    <h1>제이쿼리</h1>
+
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
+    </div>
+</body>
+
+</html>
