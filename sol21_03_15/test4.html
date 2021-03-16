@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div id="aa">자바스크립트</div>
+
+    <script>
+        var n = document.getElementById("aa");
+        var nt = n.innerHTML;
+
+        var t = setInterval("on()", 200);
+
+        n.addEventListener("click",function(){
+            clearInterval(t);
+        });
+        
+        function on(){
+            n.append(nt);
+        }
+    </script>
+
+</body>
+</html>
