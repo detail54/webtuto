@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div {
+            font-size: 8em;
+            color: orange;
+        }
+
+        #num {
+            border: 1px solid black;
+            background-color: skyblue;
+            display: inline-block;
+            color: black;
+        }
+    </style>
+    <script>
+        var result = document.createElement("div");
+
+        function ev(obj) {
+            obj.addEventListener("click", function ev() {
+                obj.innerText = parseInt((Math.random() * 3) + 1);
+                check();
+            });
+        }
+
+        function check() {
+            var a = document.getElementById("num").innerText;
+
+            if (a[0] == a[1] && a[0] == a[2]) {
+                result.innerText = "성공";
+                document.body.removeChild(result);
+                document.body.appendChild(result);
+            } else {
+                result.innerText = "실패";
+                document.body.appendChild(result);
+            }
+        }
+
+        window.onload = function () {
+            var a = document.getElementById("num");
+            var number = [document.createElement("span"), document.createElement("span"),
+                document.createElement("span")
+            ];
+
+            for (var i = 0; i < number.length; i++) {
+                number[i].innerText = 1;
+                a.appendChild(number[i]);
+                addEventListener("click", ev(number[i]));
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>숫자를 클릭하면 1에서 사이의 난수로 바뀜</h1>
+    <hr>
+    <div id="num"></div>
+</body>
+
+</html>

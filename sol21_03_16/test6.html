@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function(){
+            var a = document.getElementById("st");
+
+            a.addEventListener("click", function(e){
+                alert(e.type);
+            });
+        }
+    </script>
+</head>
+<body>
+    <p id="p">다음 여기서<strong id="st">이벤트</strong>를 출력해라</p>
+</body>
+</html>

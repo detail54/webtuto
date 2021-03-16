@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function(){
+            var a = document.getElementById("a");
+
+            a.onwheel = function(e){
+                if(e.wheelDelta < 0){
+                    a.width -= a.width*0.1;
+                    a.heigth -= a.heigth*0.1;
+                    
+                } else {
+                    a.width += a.width*0.1;
+                    a.heigth += a.heigth*0.1;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="C:\Users\82109\OneDrive\바탕 화면\re.jpg" id="a">
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function(){
+            var a = document.getElementById("a");
+
+            a.onwheel = function(e){
+                if(e.wheelDelta < 0){
+                    a.style.transform = "scale(1.2)";
+                } else {
+                    a.style.transform = "scale(0.8)";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="C:\Users\82109\OneDrive\바탕 화면\re.jpg" id="a">
+</body>
+</html>
