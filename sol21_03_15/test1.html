@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function stu(name, kor, eng, math) {
+            this.name = name;
+            this.kor = kor;
+            this.eng = eng;
+            this.math = math;
+
+            this.getsum = function(){
+                return this.kor+eng+math;
+            }
+            this.getavg = function(){
+                return this.getsum() / 3;
+            }
+            this.toString = function(){
+                return this.name + '\t' + this.getsum() + '\t' + this.getavg();
+            }
+        }
+
+        var ary = [];
+        ary.push(new stu('장군', 90, 100, 80));
+        ary.push(new stu('병용', 95, 70, 100));
+
+
+        for (var i = 0; i < ary.length; i++) {
+            alert(ary[i]);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function cl(){
+            var n = window.open("","w","width=300", "height = 200");
+
+            var t = document.getElementById("text");
+
+            n.document.open();
+            n.document.write(t.value);
+
+            n.document.close();
+        }
+    </script>
+</head>
+<body>
+    <p>버튼클릭</p>
+
+    <textarea id="text" cols="30" rows="10"></textarea>
+    <br>
+    <button onclick="cl()">클릭!</button>
+    
+</body>
+</html>

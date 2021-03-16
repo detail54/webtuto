@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button onclick="clearInterval(a1)">증가 정지</button>
+    <script>
+        var add = 0;
+        var sub = 1000;
+
+        var a1 = setInterval(function(){
+            add++;
+            console.log(add);
+        }, sub);
+    </script>
+</body>
+</html>
