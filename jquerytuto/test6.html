@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("p[title $= aa]").css("background-color", "yellow");
+            $("p[title ^= aa").css("color", "green");
+            //$("p[title]").css("color", "red");
+        })
+    </script>
+</head>
+
+<body>
+    <p>제이쿼리</p>
+    <p title="aa">p태그1</p>
+    <p title="aa-test1">p태그2</p>
+    <p title="aa-test2">p태그2</p>
+
+</body>
+
+</html>
