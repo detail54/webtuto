@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+    <style>
+        #b {
+            border: 1px solid black;
+            border-radius: 0px;
+            background-color: pink;
+            font-size: 1em;
+            padding: 8px 30px;
+            color: white;
+        }
+
+        #b:hover {
+            background-color: tomato;
+        }
+    </style>
+    <script>
+        function check() {
+            var id = "자바";
+            var pw = "1234";
+
+            var idin = document.getElementById("id");
+            var pwin = document.getElementById("pw");
+
+            if (idin.value == id && pwin.value == pw) {
+                alert("로그인성공");
+            } else {
+                alert("로그인실패");
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <p>
+        <h1>로그인</h1>
+    </p>
+    <h3>아이디</h3>
+    <div>
+        <input type="text" size="50" placeholder="아이디를 입력해주세요..." id="id">
+    </div>
+    <h3>패스워드</h3>
+    <div>
+        <input type="password" size="50" placeholder="비밀번호를 입력해주세요..." id="pw">
+    </div>
+    <p>
+        <button id="b" onclick="check()">로그인</button>
+    </p>
+
+
 </body>
+
 </html>
