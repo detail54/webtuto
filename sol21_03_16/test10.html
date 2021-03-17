@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        label {
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+    <script>
+        function re() {
+            var q = document.getElementsByTagName("label");
+            var a = document.getElementsByTagName("input");
+            var e = 0;
+
+
+            for (var i = 0; i < q.length; i++) {
+                if (eval(q[i].innerText) == a[i].value) {
+                    e++;
+                } else {
+                    q[i].style.textDecoration = "line-through";
+                }
+            }
+            document.getElementById("result").innerText = e;
+        }
+    </script>
+</head>
+
+<body>
+    <label>5*3</label><input type="text"><br>
+    <label>1+2*3</label><input type="text"><br>
+    <label>12*2</label><input type="text"><br>
+    <button onclick="re()">결과</button><span id="result"></span>
+</body>
+
+</html>
