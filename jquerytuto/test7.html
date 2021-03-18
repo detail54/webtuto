@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#aa").click(function () {
+                $("#aa").css("background-color", "yellow");
+                $("#aa").css("color", "blue");
+            })
+            $("#bb").dblclick(function () {
+                $("#bb").css("background-color", "pink");
+                $("#bb").css("color", "blue");
+            })
+
+            $("#cc").hover(function () {
+                $("#cc").css("background-color", "black");
+                $("#cc").css("color", "white");
+            }, function () {
+                $("#cc").css("background-color", "yellow");
+                $("#cc").css("color", "black");
+            })
+
+            $("#dd").blur(function () {
+                $("#dd").css("background-color", "green")
+                $("#dd").css("color", "red");
+            })
+            $("#dd").focus(function () {
+                $("#dd").css("background-color", "black")
+                $("#dd").css("color", "white");
+            })
+
+            $("#ee").dblclick(function () {
+                $("#ee").css("background-color", "pink");
+            })
+
+            $("#ee").mouseleave(function () {
+                $("#ee").css("background-color", "blue")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h3 id="aa">클릭</h3>
+    <h3 id="bb">더블클릭</h3>
+    <h3 id="cc">더블클릭</h3>
+    <h3 id="dd">더블클릭</h3>
+    <h3 id="ee">색 이벤트</h3>
+</body>
+
+</html>

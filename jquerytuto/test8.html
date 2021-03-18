@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $('input[type=radio][name=radio]').change(function () {
+            if (this.value == '1') {
+                alert("1");
+            } else if (this.value == '2') {
+                alert("2");
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <input type="radio" name="radio" value="1"><label id="11">111111</label>
+    <input type="radio" name="radio" value="2"><label id="22">222222</label>
+</body>
+
+</html>
