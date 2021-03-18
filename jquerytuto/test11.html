@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#a").on("click", function () {
+                alert("aa");
+            })
+            $("#b").one("click", function () {
+                alert("one");
+            })
+        })
+
+        function remove() {
+            $("#a").off("click");
+        }
+    </script>
+</head>
+
+<body>
+    <h2 id="a">on</h2>
+    <button type="button" onclick="remove()">제거</button>
+    <h2 id="b">one</h2>
+</body>
+
+</html>
