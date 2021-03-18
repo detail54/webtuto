@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <style>
+        .ac{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+    <script>
+        function on(){
+            $("#aa").addClass("ac");
+        }
+        function on1(){
+            $("#aa").removeClass("ac");
+        }
+        function on2(){
+            $("#aa").toggleClass("ac");
+        }
+    </script>
+</head>
+<body>
+    <h1 id="aa">h1태그</h1>
+    <button onclick="on()">CSS추가</button>
+    <button onclick="on1()">CSS제거</button>
+    <button onclick="on2()">CSS전환</button>
+</body>
+</html>

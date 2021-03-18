@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        function che() {
+            if ($("#id").val() == "자바" &&
+                $("#pw").val() == "1234") {
+                alert("로그인");
+            } else {
+                alert("실패");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>로그인</h1>
+    <p>아이디</p>
+    <dir><input id="id" type="text" size="40" placeholder="아이디를 입력해주세요"></dir>
+    <p>패스워드</p>
+    <dir><input id="pw" type="password" size="40" placeholder="비밀번호를 입력해주세요"></dir>
+    <p>
+        <button onclick="che()">로그인</button>
+    </p>
+</body>
+
+</html>

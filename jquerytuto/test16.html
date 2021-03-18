@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $("document").ready(function(){
+            //$("li:nth-child(3)").css("background-color", "yellow");
+
+            //var l = $("li");
+            //$(l[2]).css("background-color", "yellow");
+
+            $("li").eq(2).css("background-color", "yellow");
+        })
+    </script>
+</head>
+<body>
+    <ul id="list">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+    </ul>
+</body>
+</html>

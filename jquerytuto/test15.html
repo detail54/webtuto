@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <style>
+        #a1{
+            border: 1px solid green;
+        }
+    </style>
+    <script>
+        function on (){
+            $("#a1").append("<p>추가되었다</p>");
+        }
+        function pre(){
+            $("#a1").prepend("<p>추가되었다</p>");
+        }
+        function pre(){
+            var n = $("<p>");
+                n.text("gg");
+                $("#a1").prepend(n);
+        }
+
+    </script>
+</head>
+<body>
+    <div id="a1">
+        <p>태그</p>
+    </div>
+    <button onclick="on()">코드 뒤에 추가</button>
+    <button onclick="pre()">코드 앞에 추가</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        function seta(){
+            $("#a").text("문자열 설정");
+        }
+        function setb(){
+            $("#a").html("<a href='http://apple.co.kr'>애플사이트</a>");
+        }
+        function on1(){
+            var n = $("#a1").html();
+            alert(n);
+        }
+        function on2(){
+            $("a1").html("<a href='http://apple.co.kr'>애플</a>");
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="a">문자열</div>
+    <button onclick="seta()">문자열 갖고오기1</button>
+    <button onclick="setb()">문자열 갖고오기2</button>
+
+
+    <div id="a1">
+        <a href="http://www.google.com">google</a>
+    </div>
+
+    <button onclick="on1()">html 가져옴</button>
+    <button onclick="on2()">html 가져옴</button>
+</body>
+
+</html>

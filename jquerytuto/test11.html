@@ -13,11 +13,21 @@
             $("#b").one("click", function () {
                 alert("one");
             })
+
         })
 
         function remove() {
             $("#a").off("click");
         }
+        $("#c").on()({
+            click: function () {
+                alert("click");
+            },
+
+            mouseleave: function () {
+                $("#c").css("background0color", "red");
+            }
+        })
     </script>
 </head>
 
@@ -25,6 +35,7 @@
     <h2 id="a">on</h2>
     <button type="button" onclick="remove()">제거</button>
     <h2 id="b">one</h2>
+    <h2 id="c">제이쿼리</h2>
 </body>
 
 </html>
