@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#a").parent().css("border-color", "red");
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        div one
+        <div>
+            div two
+            <div>
+                div three
+                <div id="a">
+                    div four
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

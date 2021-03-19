@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            var ary = [{
+                    name: '성수',
+                    addr: '서울'
+                },
+                {
+                    name: '준엽',
+                    addr: '서울'
+                },
+                {
+                    name: '용현',
+                    addr: '서울'
+                }
+            ]
+            $.each(ary,function(index, item){
+                var result = '';
+
+                result += '<h1>' + item.name + '</h1>';
+
+                document.body.innerHTML = result;
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

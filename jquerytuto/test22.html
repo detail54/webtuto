@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            var n = [{name:'대현' , addr:'서울'},
+                    {name : '형록', addr:'경기'},
+                    {name : '준엽', addr:'서울'}];
+
+            $('div').append(function(index){
+                var i = n[index];
+                var output = '';
+
+                output += '<h1>' + i.name + '</h1>';
+                output += '<h1>' + i.addr + '</h1>';
+
+                return output;
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function(){
+            var p = document.getElementsByTagName("p");
+            p[0].addEventListener("mouseover",function(){
+                p[0].style.textDecoration = "underline";
+            })
+            p[0].addEventListener("mouseleave",function(){
+                p[0].style.textDecoration = "none";
+            })
+        }
+    </script>
+</head>
+<body>
+    <p>마우스</p>
+</body>
+</html>
