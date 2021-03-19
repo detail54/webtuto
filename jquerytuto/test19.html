@@ -4,8 +4,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
+    <style>
+        #aa{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function on(){
+            var n = $("#aa").css("background-color");
+            var m = $("#aa").css("color");
+    
+            $("#re").append("background-color :" + n + "<br>");
+            $("#re").append("color :" + m + "<br>");
+        }
+        function on1(){
+            $("#aa").css("background-color", "aqua");
+            $("#aa").css("color", "blue");
+        }
+    </script>
 </head>
 <body>
-    
+    <h1 id="aa">h1태그</h1>
+    <button onclick="on()">css읽어오기</button>
+    <button onclick="on1()">css설정하기</button>
+    <div id="re"></div>
 </body>
 </html>
