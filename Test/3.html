@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function backchange(){
+            document.getElementById("he").style.backgroundColor = "yellow";
+            document.getElementById("se").style.backgroundColor = "lightblue";
+        }
+
+        function check(){
+
+            var ra = document.getElementsByName("radio");
+            var ra2 = document.getElementsByName("gen");
+            var se = document.getElementById("sel").options[document.getElementById("sel").selectedIndex].value;
+            var cc = document.getElementsByName("ph");
+            var ch = "";
+            var te = document.getElementById("text").value;
+
+            for(var i = 0; i < ra.length; i++){
+                if(ra[i].checked == true){
+                    ra = ra[i].value;
+                }
+            }
+            for(var i = 0; i < ra2.length; i++){
+                if(ra2[i].checked == true){
+                    ra2 = ra2[i].value;
+                }
+            }
+            for(var i = 0; i < cc.length; i++){
+                if(cc[i].checked == true){
+                    ch += cc[i].value + " ";
+                }
+            }
+
+            document.write(ra+"<br>"+ra2+"<br>"+se+"<br>"+ch+"<br>"+te);
+        }
+    </script>
+</head>
+
+<body>
+    <header id="he">
+        <h1>설문지</h1>
+        <p>사고 싶은 핸드폰 종류</p>
+    </header>
+    <hr>
+    <section id="se">
+        <div>
+            갖고있는 폰 종류
+            <input type="radio" name="radio" id="r1" value="아이폰"><label for="r1">아이폰</label>
+            <input type="radio" name="radio" id="r2" value="삼성"><label for="r2">삼성</label>
+            <input type="radio" name="radio" id="r3" value="LG"><label for="r3">LG</label>
+            <input type="radio" name="radio" id="r4" value="그외"><label for="r4">그외</label>
+        </div>
+
+        <div>
+            성별
+            <input type="radio" name="gen" id="g1" value="남"><label for="g1">남</label>
+            <input type="radio" name="gen" id="g2" value="여"><label for="g2">여</label>
+        </div>
+        <div>
+            구매시기
+            <select id="sel">
+                <option value="2017~2020">2017~2020</option>
+                <option value="~2013~2016">~2013~2016</option>
+            </select>
+        </div>
+        <div>
+            통신사
+            <input name="ph" type="checkbox" value="SKT">SKT
+            <input name="ph" type="checkbox" value="KT">KT
+            <input name="ph" type="checkbox" value="LG">LG
+            <input name="ph" type="checkbox" value="그외">그외
+        </div>
+        <div>
+            남기고 싶은 말
+            <textarea id="text" cols="20" rows="2"></textarea>
+        </div>
+        <button onclick="check()">클릭</button>
+        <button onclick="backchange()">색변경</button>
+    </section>
+</body>
+
+</html>

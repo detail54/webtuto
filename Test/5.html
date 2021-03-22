@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h3:nth-child(1),h3:nth-child(4){
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+    <script>
+        window.onload = function f(){
+            var a = document.getElementsByTagName("h3");
+
+            for(var i = 0; i < a.length; i++){
+                if(i == 0 || i == 3){
+                    a[i].style.backgroundColor = "black";
+                    a[i].style.color = "white";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>header0</h3>
+
+    <h3>header1</h3>
+
+    <h3>header2</h3>
+
+    <h3>header3</h3>
+
+    <h3>header4</h3>
+
+    <h3>header5</h3>
+</body>
+
+</html>
