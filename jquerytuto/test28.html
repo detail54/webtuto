@@ -19,13 +19,15 @@
                     name: '용현',
                     addr: '서울'
                 }
-            ]
+            ];
             $.each(ary,function(index, item){
                 var result = '';
+                result += '<a href="">' + item.addr + '</a>';
 
                 result += '<h1>' + item.name + '</h1>';
+                
 
-                document.body.innerHTML = result;
+                document.body.innerHTML += result;
             })
         })
     </script>

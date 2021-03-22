@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <style>
+        .aa0{
+            background-color: red;
+        }
+        .aa1{
+            background-color: orange;
+        }
+        .aa2{
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('h1').each(function(index, item){
+                $(this).addClass('aa' + index);
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>대현</h1>
+    <h1>형록</h1>
+    <h1>용현</h1>
+    
+
+</body>
+</html>
