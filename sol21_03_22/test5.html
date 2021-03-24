@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var a = ["+", "-", "/", "*"];
+        var d = document.getElementsByTagName("div");
+        var t = document.getElementsByTagName("input");
+        var s = document.getElementsByTagName("span");
+
+        window.onload = function () {
+            set();
+            count();
+        }
+
+        function che() {
+            var r = 0;
+
+            for (var i = 0; i < t.length; i++) {
+                if (t[i].value == eval(d[i].innerHTML)) {
+                    r++;
+                } else {
+                    d[i].style.textDecoration = "line-through";
+                }
+            }
+            s[1].innerText = r;
+        }
+
+        function set() {
+
+            for (var i = 0; i < d.length; i++) {
+                var g = parseInt(Math.random() * 4);
+                d[i].innerText = parseInt(Math.random() * 99) + a[g] + parseInt(Math.random() * 99);
+                d[i].style.textDecoration = "none";
+            }
+            count();
+        }
+
+        function count() {
+            var n = 10;
+            var tt = document.getElementById("ttt");
+            tt.innerHTML = n;
+
+            var c = setInterval(time, 1000);
+        }
+
+        function time() {
+            
+            if (n == 0) {
+                che();
+            } else {
+                n--;
+                tt.innerHTML = n;
+            }
+        }
+
+        function but() {
+            clearInterval(c);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>문제는 자동으로 생성되며, 10초가 지나면 자동 채점</h1>
+    <h2>남은시간 <span id="ttt"></span></h2>
+    <hr>
+    <div></div>
+    <input type="text" size="10"><br>
+
+    <div></div>
+    <input type="text" size="10"><br>
+
+    <div></div>
+    <input type="text" size="10"><br>
+
+    <div></div>
+    <input type="text" size="10"><br>
+
+    <button onclick="but()">다시</button>
+    <span id="check"></span>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #a {
+            background-color: yellow;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        #b {
+            float: left;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <p><button onclick="on()">Click me</button></p>
+
+    <div id="a">
+        <div id="b">
+        </div>
+    </div>
+
+    <script>
+        var m = null;
+
+        function on() {
+            var n = document.geElementById("b");
+            var pos = 0;
+            m = setInterval(fun, 10);
+
+            function fun() {
+                if (pos == 400) {
+                    clearInterval(m);
+                } else {
+                    pos++;
+                    n.style.top = pos + "px";
+                    n.style.left = pos + "px";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
