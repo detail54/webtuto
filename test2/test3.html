@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("button").on("click",function(){
+                $("li").add("p").css("border", "2px solid green");
+            });
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li>첫 번째 아이템</li>
+        <li>두 번째 아이템</li>
+        <li>세 번째 아이템</li>
+    </ul>
+    <p>첫 번째 단락이에요!</p>
+
+    <button>p 요소를 추가</button>
+</body>
+</html>

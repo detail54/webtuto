@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .section .slidewrap {
+            max-width: 600px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .section .slidelist {
+            padding-left: 0;
+            margin-left: 0;
+            width: 600px;
+        }
+        .section .slide-control{
+            width: 600px;
+        }
+
+        .section .slidelist > li {
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            transition: all .5s;
+        }
+
+        .section .slidelist > li > a {
+            position: relative;
+            display: block;
+        }
+
+        .section .slidelist > li > a img {
+            width: 100%;
+        }
+
+        .section .slidelist label {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 30px;
+            cursor: pointer;
+        }
+
+        .section .slidelist .left {
+            left: 30px;
+            border: 0px solid rgba(235, 235, 235, 0.788);
+            background-color: rgb(235, 235, 235, 0.788);
+             
+            border-radius: 100px;
+            font-size: 2em;
+            color: rgb(141, 141, 141);
+        }
+
+        .section .slidelist .right {
+            right: 30px;
+            border: 0px solid rgba(235, 235, 235, 0.788);
+            background-color: rgb(235, 235, 235, 0.788);
+            opacity: 0.5;
+            border-radius: 100px;
+            font-size: 2em;
+            color: rgb(141, 141, 141);
+        }
+
+        .section [id="slide01"]:checked ~ .slidewrap .slidelist > li  {
+            transform: translateX(0%);
+        }
+
+        .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+            transform: translateX(-101%);
+        }
+
+        .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+            transform: translateX(-202%);
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="section">
+
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02">
+    <input type="radio" name="slide" id="slide03">
+    <div class = "slidewrap">
+        <ul class="slidelist">
+            <li>
+                <a>
+                    <label for="slide03" class="left"><</label> 
+                    <img src="C:\Users\82109\OneDrive\바탕 화면\re.jpg">
+                    <label for="slide02" class="right">></label>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <label for="slide01" class="left"><</label> 
+                    <img src="C:\Users\82109\OneDrive\바탕 화면\re.jpg">
+                    <label for="slide03" class="right">></label>
+
+                </a>
+            </li>
+            <li>
+                <a>
+                    <label for="slide02" class="left"><</label> 
+
+                    <img src="C:\Users\82109\OneDrive\바탕 화면\re.jpg">
+                    <label for="slide01" class="right">></label>
+
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>

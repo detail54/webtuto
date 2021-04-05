@@ -48,21 +48,15 @@
             var tt = document.getElementById("ttt");
             tt.innerHTML = n;
 
-            var c = setInterval(time, 1000);
-        }
+            var c = setInterval(function () {
 
-        function time() {
-            
-            if (n == 0) {
-                che();
-            } else {
-                n--;
-                tt.innerHTML = n;
-            }
-        }
-
-        function but() {
-            clearInterval(c);
+                if (n == 0) {
+                    che();
+                } else {
+                    n--;
+                    tt.innerHTML = n;
+                }
+            }, 1000);
         }
     </script>
 </head>
@@ -83,7 +77,7 @@
     <div></div>
     <input type="text" size="10"><br>
 
-    <button onclick="but()">다시</button>
+    <button onclick="set()">다시</button>
     <span id="check"></span>
 </body>
 

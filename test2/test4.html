@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .thro {
+            text-decoration: line-through;
+            color: rgb(180, 180, 180);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#add").on("click",function(){
+                $("div:nth-child(1)").add("div:nth-child(3)").addClass("thro");
+            });
+            $("#remove").on("click",function(){
+                $("div:nth-child(1)").add("div:nth-child(3)").removeClass("thro");
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div>이 단락에 클래스를 추가</div>
+    <div>이 단락에는 클래스를 추가하지 않아</div>
+    <div>이 단락에 클래스를 추가</div>
+    <button id="add">클래스 추가</button>
+    <button id="remove">클래스 제거</button>
+</body>
+
+</html>
